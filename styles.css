@@ -1,0 +1,46 @@
+/* Universal styles */
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+/*Header styles -- Flex-box used*/
+header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+.admin-dropdown {
+
+}
+
+.nav-items {
+width: 50%;
+}
+
+.company-name {
+width: 50%;
+}
+
+.icon {
+  width: 1rem;
+}
+
+ /*Card styles -- Grid used*/
+
+.card-container {   
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ grid-gap: 10px;
+ margin: 15px;
+}
+
+/*Media Styles*/
+
+@media screen and (max-width: 800px) {
+
+}
