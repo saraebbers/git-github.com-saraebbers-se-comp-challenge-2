@@ -35,7 +35,7 @@ i {
   color: var(--primary);
   display: grid;
   padding: 15px;
-  grid-template-columns: 0.5fr 0.75fr 1.25fr 2fr; 
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); 
   grid-template-rows: 2fr 3fr;
 }
 
@@ -47,18 +47,12 @@ i {
 
 .nav1 {
   display: flex;
-  /*justify-content: flex-end;*/
   align-items: flex-end;
-}
-
-.fa-snowflake {
-
 }
 
 .logo {
   display: flex;
   font-size: 2.25rem;
-  /*justify-content: center;*/
   align-items: center;
 }
 
@@ -75,9 +69,9 @@ i {
 
 .cards {   
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
-  grid-gap: 10px;
-  margin: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+  grid-gap: 15px;
+  margin: 5px;
   width: 100%;
 }
 
@@ -87,7 +81,7 @@ i {
   box-shadow: 5px 5px 5px var(--dark);
 }
 
-.card-image {
+.card-image1 {
   width: 100%;
   height:150px;
   background: 
@@ -101,7 +95,120 @@ i {
   padding-top: 15px;
   display: flex;
   justify-content: flex-start;
+}
 
+.card-image2 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/2012-02-25 14.05.21 copy.jpg");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image3 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/2013-03-23 11.58.03 copy.jpg");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image4 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_2301 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image5 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_4219 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image6 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_4226 copy.JPG");
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image7 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_4173 copy.JPG");
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image8 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_1380 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .image-text{
@@ -158,6 +265,9 @@ textarea {
 
 /*Media Styles*/
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 980px) {
+  .title {
+        grid-template-areas: ;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
 }
+
