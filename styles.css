@@ -1,42 +1,159 @@
 /* Universal styles */
 
+:root {
+  --primary: #808080;
+  --dark: #2A0000;
+  --light: #D5D5D5;
+}
+
 * {
-  margin: 0 auto;
   box-sizing: border-box;
   font-family: 'EB Garamond', serif;
+  margin: 0 auto;
 }
 
-/*Header styles -- Flex-box used*/
-header {
-  background-color: black;
+body {
+  background-color: var(--light);
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+}
+
+i {
+  padding: 5px;
+}
+
+/*Header styles -- Grid Used on container, flex on items*/
+.title {
   width: 100%;
+  background-color: var(--dark);
+  color: var(--primary);
+  display: grid;
+  padding: 15px;
+  grid-template-columns: 0.5fr 0.75fr 1.25fr 2fr; 
+  grid-template-rows: 2fr 3fr;
+}
+
+.nav {
   display: flex;
-  color: white;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
-.admin-dropdown {
+.nav1 {
+  display: flex;
+  /*justify-content: flex-end;*/
+  align-items: flex-end;
+}
+
+.fa-snowflake {
 
 }
 
-.nav-items {
-width: 50%;
+.logo {
+  display: flex;
+  font-size: 2.25rem;
+  /*justify-content: center;*/
+  align-items: center;
 }
 
-.company-name {
-width: 50%;
-}
-
-.icon {
-  width: 1rem;
+.main {
+  min-height: 3rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark);
+  padding: 10px;
 }
 
  /*Card styles -- Grid used*/
 
-.card-container {   
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- grid-gap: 10px;
- margin: 15px;
+.cards {   
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+  grid-gap: 10px;
+  margin: 15px;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--primary);
+  color: var(--light);
+  box-shadow: 5px 5px 5px var(--dark);
+}
+
+.card-image {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_3065 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.image-text{
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.num {
+  font-size: 2rem;
+}
+
+.attachNum {
+  color: #096CB2;
+}
+
+.card-text {
+  padding: 15px;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--light);
+  resize: none;
+  border: none;
+  max-height: 50px;
+}
+
+.playlist {
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+
+.attachments {
+  font-size: 0.75rem;
+}
+
+.name {
+  font-size: 1.25rem;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.playlist-name {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 0.90rem;
+  margin-bottom: 10px;
 }
 
 /*Media Styles*/
