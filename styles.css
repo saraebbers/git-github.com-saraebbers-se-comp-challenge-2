@@ -47,11 +47,12 @@ i {
 
 .nav1 {
   justify-self: end;
-  grid-column: span 4;
-  width: 100%;
+  grid-column: 4;
+  /*width: 100%;*/
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
+
 }
 
 .logo {
