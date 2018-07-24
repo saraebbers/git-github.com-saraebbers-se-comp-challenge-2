@@ -1,46 +1,273 @@
 /* Universal styles */
 
+:root {
+  --primary: #808080;
+  --dark: #2A0000;
+  --light: #D5D5D5;
+}
+
 * {
-  margin: 0 auto;
   box-sizing: border-box;
   font-family: 'EB Garamond', serif;
+  margin: 0 auto;
 }
 
-/*Header styles -- Flex-box used*/
-header {
-  background-color: black;
+body {
+  background-color: var(--light);
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+}
+
+i {
+  padding: 5px;
+}
+
+/*Header styles -- Grid Used on container, flex on items*/
+.title {
   width: 100%;
+  background-color: var(--dark);
+  color: var(--primary);
+  display: grid;
+  padding: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); 
+  grid-template-rows: 2fr 3fr;
+}
+
+.nav {
   display: flex;
-  color: white;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
-.admin-dropdown {
-
+.nav1 {
+  display: flex;
+  align-items: flex-end;
 }
 
-.nav-items {
-width: 50%;
+.logo {
+  display: flex;
+  font-size: 2.25rem;
+  align-items: center;
 }
 
-.company-name {
-width: 50%;
-}
-
-.icon {
-  width: 1rem;
+.main {
+  min-height: 3rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark);
+  padding: 10px;
 }
 
  /*Card styles -- Grid used*/
 
-.card-container {   
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- grid-gap: 10px;
- margin: 15px;
+.cards {   
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+  grid-gap: 15px;
+  margin: 5px;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--primary);
+  color: var(--light);
+  box-shadow: 5px 5px 5px var(--dark);
+}
+
+.card-image1 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_3065 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image2 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/2012-02-25 14.05.21 copy.jpg");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image3 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/2013-03-23 11.58.03 copy.jpg");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image4 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_2301 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image5 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_4219 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image6 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_4226 copy.JPG");
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image7 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_4173 copy.JPG");
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-image8 {
+  width: 100%;
+  height:150px;
+  background: 
+  linear-gradient(
+    rgba(56, 56, 56, .3),
+    rgba(56, 56, 56, .3)),
+    url("images/IMG_1380 copy.JPG");
+  background-size: cover;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.image-text{
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.num {
+  font-size: 2rem;
+}
+
+.attachNum {
+  color: #096CB2;
+}
+
+.card-text {
+  padding: 15px;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--light);
+  resize: none;
+  border: none;
+  max-height: 50px;
+}
+
+.playlist {
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+
+.attachments {
+  font-size: 0.75rem;
+}
+
+.name {
+  font-size: 1.25rem;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.playlist-name {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 0.90rem;
+  margin-bottom: 10px;
 }
 
 /*Media Styles*/
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 980px) {
+  .title {
+        grid-template-areas: ;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
 }
+
